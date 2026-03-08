@@ -1,4 +1,4 @@
-# Lightweight Semantic Search & Custom Caching Engine
+# Semantic Search & Caching Engine
 
 A production-ready FastAPI microservice providing semantic search over the 20 Newsgroups dataset, backed by a custom-built, cluster-routed semantic cache. This system was built from first principles to prioritize mathematically proven routing, fuzzy clustering, and high-fidelity logical reranking.
 
@@ -44,7 +44,7 @@ To protect the cache from false positives and out-of-domain noise (e.g., gibberi
 
 ---
 
-## 🚀 Performance & Benchmarking
+##  Performance & Benchmarking
 
 The cache was stress-tested using 1,000 unique human queries (extracted from the unseen 20 Newsgroups test split) fed through a **Zipfian Distribution** to simulate real-world, power-law API traffic.
 

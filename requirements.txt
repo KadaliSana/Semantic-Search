@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+scikit-learn
+sentence-transformers
+numpy
+chromadb
+umap-learn
+hdbscan

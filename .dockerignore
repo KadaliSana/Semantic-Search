@@ -1,0 +1,11 @@
+venv/
+env/
+__pycache__/
+*.pyc
+
+chroma_data/
+semantic_cache.pkl
+
+.git/
+.DS_Store
+*.jpeg

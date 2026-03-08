@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  semantic-api:
+    build: .
+    container_name: semantic_cache_service
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist the ChromaDB vector storage
+      - ./chroma_data:/app/chroma_data
+      # Persist the custom semantic cache state
+      - ./semantic_cache.pkl:/app/semantic_cache.pkl
+      # Persist dataset downloads
+      - ~/scikit_learn_data:/root/scikit_learn_data
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+    restart: unless-stopped
